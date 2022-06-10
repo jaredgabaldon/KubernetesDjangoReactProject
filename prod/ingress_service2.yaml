@@ -1,4 +1,3 @@
-cat <<EOF > ingress-resource.yaml
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
@@ -18,4 +17,3 @@ spec:
             name: django-cluster-ip-service
             port:
               number: 8000
-EOF
